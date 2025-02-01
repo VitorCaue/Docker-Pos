@@ -1,13 +1,17 @@
 FROM nginx:alpine
 
+#Criando diretorios
+RUN mkdir /usr/share/nginx/html/css \
+    && mkdir /usr/share/nginx/html/images
+
 #Arquivos copiados
-COPY escopo.html /usr/share/nginx/html/
-COPY css/style.css /usr/share/nginx/html/
-COPY images/230344.png /usr/share/nginx/html/
-COPY images/Cômoda-retrô-com-espelho.jpg /usr/share/nginx/html/
-COPY images/Fundo.jpg /usr/share/nginx/html/
-COPY images/moveis-retro-roxo-vibrante-na-poltrona.jpg /usr/share/nginx/html/
-COPY images/recamier-los-1.jpg /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/
+COPY css/style.css /usr/share/nginx/html/css/style.css
+COPY images/230344.png /usr/share/nginx/html/images/230344.png
+COPY images/Cômoda-retrô-com-espelho.jpg /usr/share/nginx/html/images/Cômoda-retrô-com-espelho.jpg
+COPY images/Fundo.jpg /usr/share/nginx/html/images/Fundo.jpg
+COPY images/moveis-retro-roxo-vibrante-na-poltrona.jpg /usr/share/nginx/html/images/moveis-retro-roxo-vibrante-na-poltrona.jpg
+COPY images/recamier-los-1.jpg /usr/share/nginx/html/images/recamier-los-1.jpg
 
 #Porta Nginx
 EXPOSE 80
