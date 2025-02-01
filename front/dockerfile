@@ -1,0 +1,16 @@
+FROM nginx:alpine
+
+#Arquivos copiados
+COPY escopo.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
+COPY 230344.png /usr/share/nginx/html/
+COPY Cômoda-retrô-com-espelho.jpg /usr/share/nginx/html/
+COPY Fundo.jpg /usr/share/nginx/html/
+COPY moveis-retro-roxo-vibrante-na-poltrona.jpg /usr/share/nginx/html/
+COPY recamier-los-1.jpg /usr/share/nginx/html/
+
+#Porta Nginx
+EXPOSE 80
+
+# Comando para iniciar o Nginx
+CMD ["nginx", "-g", "daemon off;"]
