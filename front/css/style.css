@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    position: relative;
+    background-color: gray;
+    background-image: url(../images/Fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#principal{
+    background-color: #39393f;
+    width: 1200px;
+    height: 667px;
+    position: relative;
+    left: 10%;
+    z-index: -1;
+    
+}
+#cabeçalho{
+    background-color: blueviolet;
+    height: 50px;
+    position: relative;
+    font-weight: bolder; 
+    
+}
+#texto01{
+    margin: 0px;
+    padding-top: 13px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+#comp-01{
+    width: 200px;
+    height: 308px;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    text-align: center;
+}
+#img-01{
+    width: 200px;
+    height: 160px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#comp-02{
+    width: 200px;
+    height: 308px;
+    position: relative;
+    left: 40%;
+    bottom: 36%;
+    text-align: center;
+}
+#img-02{
+    width: 200px;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+#comp-03{
+    width: 200px;
+    height: 308px;
+    position: relative;
+    left: 70%;
+    bottom: 82%;
+    text-align: center;
+    
+}
+#img-03{
+    width: 200px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.desc{
+    font-weight: bold;
+    position: relative;
+}
+.prod{
+    display: grid;
+    position: relative;
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.prod::before{
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 315px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(green, #fff200, #ff0000);
+    z-index: calc();
+    animation: anima 3s linear infinite;
+    z-index: -1;
+}
+@keyframes anima{
+    0%{
+        filter: hue-rotate(0deg) brightness(100%) blur(10px);
+    }
+    100%{
+        filter: hue-rotate(360deg) brightness(100%) blur(10px);
+    }
+}
