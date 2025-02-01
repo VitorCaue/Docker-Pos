@@ -28,7 +28,7 @@ docker run -d -p 80:80 vitorcaue03ads/docker-pos:1.0.0
 Abrir o navegador usando o ip da maquina virtual ou usando "localhost:8080" no navegador
 
 
-### Passos para Publicar a Imagem
+# Passos para Publicar a Imagem
 
 1. **Crie uma conta no Docker Hub:**  
    - Acesse Docker Hub(https://hub.docker.com/) e crie uma conta caso ainda não tenha uma.
